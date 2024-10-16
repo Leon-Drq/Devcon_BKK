@@ -126,9 +126,9 @@ dfx wallet redeem-faucet-coupon <coupon_id> --ic
 
 
 ## Project Submission
-To submit a project for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Bali/issues/new) on this repository before the deadline.
+To submit a project for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/new) on this repository before the deadline.
 Set the title of the Issue to the name of your project.
-See an example project submission [here](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Bali/issues/2).
+See an example project submission [here](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/2).
 We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
 In order for your submission to be considered, include the following things in the Issue description:
 
@@ -156,9 +156,9 @@ There are 2 challenges, you can do them in Azle (TS/JS), Rust or Motoko.
 1) You have to submit a canister featuring a custom **frontend & backend** (don't just copy the template).
 2) Submit a canister using **HTTPS outcalls**, or making a **crosschain interaction**.
 
-To submit a challenge for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Bali/issues/new) on this repository before the deadline.
+To submit a challenge for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/new) on this repository before the deadline.
 Set the title of the Issue as follows: Challenge Submission.
-See an example challenge submission [here](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Bali/issues/1).
+See an example challenge submission [here](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/1).
 We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
 In order for your submission to be considered, include the following things in the Issue description:
 
