@@ -156,7 +156,7 @@ There are 2 challenges, you can do them in Azle (TS/JS), Rust or Motoko.
 1) You have to submit a canister featuring a custom **frontend & backend** (don't just copy the template).
 2) Submit a canister using **HTTPS outcalls**, or making a **crosschain interaction**.
 
-To submit a challenge for the hackathon - open an [Issue]([https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/new](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new) on this repository before the deadline.
+To submit a challenge for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new) on this repository before the deadline.
 Set the title of the Issue as follows: Challenge Submission.
 See an example challenge submission [here](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/1).
 We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
