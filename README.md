@@ -155,7 +155,7 @@ There are 2 challenges, you can do them in Azle (TS/JS), Rust or Motoko.
 
 To submit a challenge for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
 Set the title of the Issue as follows: Challenge Submission.
-See an example challenge submission [here](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/1).
+See an example challenge submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/2#issue-2640519216).
 We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
 In order for your submission to be considered, include the following things in the Issue description:
 
