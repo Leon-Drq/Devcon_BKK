@@ -2,25 +2,25 @@
 
 ## Content
 
--   [Tasks](#tasks)
--   [Bounties](#bounties)
+-   [Bountys](#bountys)
+-   [Tracks](#tracks)
 -   [Resources](#resources)
 -   [Cycles](#cycles)
 -   [How to Submit](#how-to-submit)
 -   [Judging](#judging)
 -   [Payout](#payout)
 
-# Tasks
+# Bountys
 
-Throughout the hacker house, you'll have the opportunity to complete various tasks that will progressively prepare you for larger challenges, with rewards ranging from $20 to $100 based on complexity. Tasks are designed to be small, well-defined, and time-sensitive, allowing you to apply what you’ve learned and earn as you go. Completing tasks will also bring you closer to submitting a final project for one of the larger bounties. Try to complete tasks as quickly as possible, as there’s only a limited number available to claim.
+Throughout the hacker house, you'll have the opportunity to complete various Bountys that will progressively prepare you for larger challenges, with rewards ranging from $20 to $100 based on complexity. Bountys are designed to be small, well-defined, and time-sensitive, allowing you to apply what you’ve learned and earn as you go. Completing Bountys will also bring you closer to submitting a final project for one of the larger Tracks. Try to complete Bountys as quickly as possible, as there’s only a limited number available to claim.
 
-## Easy Tasks – $25 Each
+## Easy Bountys – $25 Each
 
 -   **[Claim Cycles](https://anv4y-qiaaa-aaaal-qaqxq-cai.ic0.app/) and deploy a canister smart contract on ICP (awarded 100 times)**: Claim a cycles coupon and deploy a simple "Hello World" backend canister on mainnet, including a frontend with specific functionalities:
     -   Modify the `greet` function to update call.
     -   Keep an array of all submitted `name` arguments in the canister and expose them through a `submittedNames` query method
     -   Add a button to display them in the frontend.
--   **Claim gas tokens and deploy a smart contract on [Bitfinity Network](https://bitfinity.network/) (awarded 100 times)**: For this task, you will deploy a Solidity-based "Hello World" smart contract and integrate it with a frontend on the Internet Computer (ICP). Follow the instructions below to complete the task.
+-   **Claim gas tokens and deploy a smart contract on [Bitfinity Network](https://bitfinity.network/) (awarded 100 times)**: For this Bounty, you will deploy a Solidity-based "Hello World" smart contract and integrate it with a frontend on the Internet Computer (ICP). Follow the instructions below to complete the Bounty.
     -   Create a Solidity smart contract with a `greet` function that should
         -   Take a string argument `name`.
         -   Return a greeting in the format: `"Hello, <name>"`.
@@ -36,7 +36,7 @@ Throughout the hacker house, you'll have the opportunity to complete various tas
             -   Using an [asset canister](https://internetcomputer.org/docs/current/developer-docs/web-apps/application-frontends/existing-frontend), or
             -   Deploying via [Juno.build](https://juno.build/docs/guides/manual-deployment).
 
-## Medium Tasks – $100 Each
+## Medium Bountys – $100 Each
 
 -   **Token Deployment & Interaction (awarded 20 times)**: Deploy an ICRC-1 canister on mainnet with custom name and supply, and interact with it using `ic-js` and `@dfinity/agent-js`. Includes minting, transferring tokens, and displaying transaction history.
 -   **On-Chain Oracle (awarded 20 times)**: Use HTTP outcalls to fetch price data from Coinbase API at regular intervals, store it as a time series, and expose the data via query call on a frontend.
@@ -44,9 +44,9 @@ Throughout the hacker house, you'll have the opportunity to complete various tas
 -   **Subscription Service (awarded 10 times)**: Set up a canister that collects recurring payments from an Ethereum account, using [USDC](https://faucet.circle.com/) or [WETH](https://weth.altlayer.io/transfer) on Sepolia. `approve` the canister’s Ethereum address for a certain amount and then let the canister call `transferFrom` regularly using [a timer](https://github.com/dfinity/examples/tree/master/rust/periodic_tasks) to deduct the subscription fee from your account.
 -   **Whale Watcher (awarded 10 times)**: Create a canister to monitor USDC transfers over 1 million, storing and exposing the transfer details via query call on a frontend. A cool stretch goal would be to automatically mint an ERC-721 NFT Whale NFT to the receiver
 
-# Bounties
+# Tracks
 
-Bounties are larger, open-ended projects with broader requirements and a higher reward pool. Each bounty challenge leverages unique features of the Internet Computer (ICP), enabling you to create applications that push the boundaries of blockchain technology. The bounties are designed to build on top of the skills developed in the tasks, giving you a solid foundation to tackle these more ambitious projects. Below are the available bounties, each with a distinct focus and inspiration for your submissions.
+Tracks are larger, open-ended projects with broader requirements and a higher reward pool. Each Track leverages unique features of the Internet Computer (ICP), enabling you to create applications that push the boundaries of blockchain technology. The Tracks are designed to build on top of the skills developed in the Bountys, giving you a solid foundation to tackle these more ambitious projects. Below are the available Tracks, each with a distinct focus and inspiration for your submissions.
 
 ## 1) **Fully On-Chain Dapps**
 
@@ -198,7 +198,26 @@ Ask your hacker house mentor for coupons, then follow the steps outlined [here](
 
 # How to Submit
 
-## Project Submission
+## Bounty Submission
+
+To submit a bounty for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
+Set the title of the Issue as follows: Bounty Submission.
+See an example bounty submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/2#issue-2640519216).
+We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
+In order for your submission to be considered, include the following things in the Issue description:
+
+-   link to a Github repository containing **your** project code (not just the template!) (main branch is considered only)
+    OR:
+-   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
+
+-   Your ICP principal for the payout (from the OISY wallet)
+
+Note the submission criteria: 
+- The issue must be created from a github user 
+- Team submissions are not accepted here 
+- No re-use of previous works and plagiarism. Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
+
+## Track Submission
 
 To submit a project for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
 Set the title of the Issue to the name of your project.
@@ -212,33 +231,12 @@ In order for your submission to be considered, include the following things in t
     -   Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
 -   you can also include a video to showcase your project
 -   project description
--   what track you want to apply for
+-   what Track you want to apply for
 -   team participants
     -   please use GitHub username for everyone
     -   Discord IDs
 -   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
 -   your ICP principal for the payout (from the OISY wallet)
-
-## Challenge Submission
-
-There are 2 challenges, you can do them in Azle (TS/JS), Rust or Motoko.
-
-1. You have to submit a canister featuring a custom **frontend & backend** (don't just copy the template).
-2. Submit a canister using **HTTPS outcalls**, or making a **crosschain interaction**.
-
-To submit a challenge for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
-Set the title of the Issue as follows: Challenge Submission.
-See an example challenge submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/2#issue-2640519216).
-We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
-In order for your submission to be considered, include the following things in the Issue description:
-
--   link to a Github repository containing **your** project code (not just the template!) (main branch is considered only)
-    OR:
--   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
-
--   Your ICP principal for the payout (from the OISY wallet)
-
-Note the submission criteria: - The issue must be created from a github user - Team submissions are not accepted here - If you solve challenge 1 and 2 in the same canister, you can just submit one canister/repo - No re-use of previous works and plagiarism - Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
 
 # Judging
 
