@@ -203,33 +203,32 @@ Ask your hacker house mentor for coupons, then follow the steps outlined [here](
 To submit a bounty for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
 Set the title of the Issue as follows: Bounty Submission.
 See an example bounty submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/2#issue-2640519216).
-We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
 In order for your submission to be considered, include the following things in the Issue description:
 
--   link to a Github repository containing **your** project code (not just the template!) (main branch is considered only)
-    OR:
+-   link to a Github repository containing **your** project code (main branch is considered only)
 -   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
-
 -   Your ICP principal for the payout (from the OISY wallet)
 
-Note the submission criteria: 
-- The issue must be created from a github user 
-- Team submissions are not accepted here 
-- No re-use of previous works and plagiarism. Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
+Note the submission criteria:
+
+-   The issue must be created from a github user
+-   Team submissions are not accepted here
+-   No re-use of previous works and plagiarism. Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
+
+Once you submitted the issue, approach a mentor at the hacker house to review your submission.
 
 ## Track Submission
 
 To submit a project for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
 Set the title of the Issue to the name of your project.
-See an example project submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/1#issue-2640492144).
-We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
+See an example project submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/1#issue-2640492144). Make sure you read the "What we're looking for" and "Judging Criteria" sections for each track before submitting.
 In order for your submission to be considered, include the following things in the Issue description:
 
 -   link to a Github repository containing **your** project code (not just the template!) and a README.md on how to run it (main branch is considered only)
-    -   your project must be built on ICP, and all code must be in the repo above
+    -   your project must be built on ICP/ Bitfinity, and all code must be in the repo above
     -   No re-use of previous works and plagiarism
     -   Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
--   you can also include a video to showcase your project
+-   include a video to showcase your project
 -   project description
 -   what Track you want to apply for
 -   team participants
