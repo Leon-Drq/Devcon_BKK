@@ -128,7 +128,7 @@ dfx wallet redeem-faucet-coupon <coupon_id> --ic
 ## Project Submission
 To submit a project for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/ICP_Hacker_House_Devcon_BKK/issues/new) on this repository before the deadline.
 Set the title of the Issue to the name of your project.
-See an example project submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/1).
+See an example project submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/1#issue-2640492144).
 We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
 In order for your submission to be considered, include the following things in the Issue description:
 
