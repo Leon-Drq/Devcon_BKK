@@ -1,251 +1,204 @@
 # 2024 Chain Fusion Hacker House Devcon Bangkok
 
 ## Content
+- [Hack-Challenges](#hack-challenges)
+  * [Tracks](#tracks)
+    + [xChain dApps  - Total Prize pool of USD 5k](#xchain-dapps----total-prize-pool-of-usd-5k)
+    + [Fully on-chain dApps - Total Prize pool of USD 5k](#fully-on-chain-dapps---total-prize-pool-of-usd-5k)
+    + [EVM dApps on ICP - Total Prize pool of USD 5k](#evm-dapps-on-icp---total-prize-pool-of-usd-5k)
+  * [Resources](#resources)
+  * [Submission](#submission)
+  * [Judging Criteria](#judging-criteria)
 
--   [Bountys](#bountys)
--   [Tracks](#tracks)
--   [Resources](#resources)
--   [Cycles](#cycles)
--   [How to Submit](#how-to-submit)
--   [Judging](#judging)
--   [Payout](#payout)
 
-# Bountys
 
-Throughout the hacker house, you'll have the opportunity to complete various Bountys that will progressively prepare you for larger challenges, with rewards ranging from $20 to $100 based on complexity. Bountys are designed to be small, well-defined, and time-sensitive, allowing you to apply what you’ve learned and earn as you go. Completing Bountys will also bring you closer to submitting a final project for one of the larger Tracks. Try to complete Bountys as quickly as possible, as there’s only a limited number available to claim.
+## Hack-Challenges
 
-## Easy Bountys – $25 Each
+### Tracks
 
--   **[Claim Cycles](https://anv4y-qiaaa-aaaal-qaqxq-cai.ic0.app/) and deploy a canister smart contract on ICP (awarded 100 times)**: Claim a cycles coupon and deploy a simple "Hello World" backend canister on mainnet, including a frontend with specific functionalities:
-    -   Modify the `greet` function to update call.
-    -   Keep an array of all submitted `name` arguments in the canister and expose them through a `submittedNames` query method
-    -   Add a button to display them in the frontend.
--   **Claim gas tokens and deploy a smart contract on [Bitfinity Network](https://bitfinity.network/) (awarded 100 times)**: For this Bounty, you will deploy a Solidity-based "Hello World" smart contract and integrate it with a frontend on the Internet Computer (ICP). Follow the instructions below to complete the Bounty.
-    -   Create a Solidity smart contract with a `greet` function that should
-        -   Take a string argument `name`.
-        -   Return a greeting in the format: `"Hello, <name>"`.
-        -   Each time `greet` is called, the contract should:
-            -   Store the provided `name` in an array called `submittedNames`.
-    -   Implement an endpoint in the smart contract that:
-        -   Returns the `submittedNames` array.
-        -   This endpoint should be accessible from the frontend to display all previously submitted names.
-    -   Build a frontend on ICP to interact with the smart contract, including:
-        -   An input field where users can enter the `name` argument and call the `greet` function.
-        -   A button to retrieve and display the `submittedNames` array.
-        -   Deploy the frontend on ICP, either by:
-            -   Using an [asset canister](https://internetcomputer.org/docs/current/developer-docs/web-apps/application-frontends/existing-frontend), or
-            -   Deploying via [Juno.build](https://juno.build/docs/guides/manual-deployment).
+Here are the two different tracks we have open and some example ideas you can
+inspire yourself from/copy
 
-## Medium Bountys – $100 Each
+#### xChain dapps  - Total Prize pool of USD 5k
 
--   **Token Deployment & Interaction (awarded 20 times)**: Deploy an ICRC-1 canister on mainnet with custom name and supply, and interact with it using `ic-js` and `@dfinity/agent-js`. Includes minting, transferring tokens, and displaying transaction history.
--   **On-Chain Oracle (awarded 20 times)**: Use HTTP outcalls to fetch price data from Coinbase API at regular intervals, store it as a time series, and expose the data via query call on a frontend.
--   **Random Game with ICP (awarded 20 times)**: Use on-chain randomness to build a simple game, enabling user authentication with Internet Identity and a frontend for interaction.
--   **Subscription Service (awarded 10 times)**: Set up a canister that collects recurring payments from an Ethereum account, using [USDC](https://faucet.circle.com/) or [WETH](https://weth.altlayer.io/transfer) on Sepolia. `approve` the canister’s Ethereum address for a certain amount and then let the canister call `transferFrom` regularly using [a timer](https://github.com/dfinity/examples/tree/master/rust/periodic_tasks) to deduct the subscription fee from your account.
--   **Whale Watcher (awarded 10 times)**: Create a canister to monitor USDC transfers over 1 million, storing and exposing the transfer details via query call on a frontend. A cool stretch goal would be to automatically mint an ERC-721 NFT Whale NFT to the receiver
--   **Loyality Program (awarded 20 times)**: Create a loyalty program using Solidity. Users earn points by completing actions (e.g., logging in daily or making a purchase), track balances, and redeem rewards in the form of discounts on product purchase. Loyality points can be in the form of ERC-20 tokens. Deploy it on [Bitfinity](https://bitfinity.network/) testnet.
 
-# Tracks
+The Internet Computer is a unique platform to build cross-chain dapps. In the
+workshops, you’ll get introduced to threshold ECDSA, the Bitcoin integration, ckBTC , HTTPS outcalls to other chains, and the [IC-ETH-Starter] template as an example.
 
-Tracks are larger, open-ended projects with broader requirements and a higher reward pool. Each Track leverages unique features of the Internet Computer (ICP), enabling you to create applications that push the boundaries of blockchain technology. The Tracks are designed to build on top of the skills developed in the Bountys, giving you a solid foundation to tackle these more ambitious projects. Below are the available Tracks, each with a distinct focus and inspiration for your submissions.
+In this track, you are challenged to use one or more of these powerful building
+blocks to create a novel application. In the following, we have listed some
+projects you could tackle.
 
-## 1) **Fully On-Chain Dapps**
+* Use ckBTC, ckETH, ckUSDC, ...
+* Use EVM RPC canister
+* Use HTTPS outcalls to other chains
 
-The Internet Computer (ICP) is a third-generation blockchain, serving as a permissionless, decentralized cloud built on blockchain technology. Its smart contracts, known as canisters, are more akin to decentralized servers than traditional smart contracts, representing an evolution in blockchain-based applications. Due to their powerful nature, canisters can run general-purpose and even enterprise-level applications, offering flexibility far beyond typical smart contracts. With canisters, developers can build powerful dapps and services that benefit from 1-2 second transaction finality, enabling a user experience (UX) that closely resembles the speed and responsiveness customers are used to from web2 applications.
+##### Prizes
 
-What makes ICP stand out is its combination of [cross-chain capabilities and unique protocol features](https://www.notion.so/ICP-Hackathon-Cheat-Sheet-b2921239266149de81021412f572351c?pvs=21) you won’t find on any other blockchain:
+1. USD 3k in ICP grants
+2. USD 2k in ICP grants
 
--   **Low-cost, massive storage**: Store up to 400GB of data in a canister smart contract for just $5 per GB per year, making it ideal for hosting dapp frontends or large datasets.
--   **Smart contracts that can make HTTPS requests**: Build apps that seamlessly integrate web2 services directly into web3.
--   **Timers**: Execute code at specific intervals to create features for recurring payments, automated DeFi strategies, periodic oracle updates, and more.
--   **Secure randomness**: True on-chain randomness opens up use cases for gaming, governance, fair auctions, etc.
--   **External wallet login**: Sign in with Ethereum or Solana wallets to applications hosted on ICP. Linking of external blockchain accounts with ICP accounts allows for using ICP as an ETH/SOL/BTC L2.
--   **Serve content over HTTPS**: Canisters can natively serve HTTP, enabling hosting of websites or serving APIs from a smart contract without additional software.
--   **Reverse gas model**: Massively improve your UX by freeing end users from paying for transactions they perform when interacting with your dapp.
--   **Long-running, multi-block transactions** that even allow running AI inference.
--   **Chain Fusion**: chain-key Schnorr and chain-key ECDSA support, enabling seamless interaction with Bitcoin, EVM chains, Solana, and more. With chain-key cryptography, ICP smart contracts can also natively hold ETH, BTC, and other tokens, allowing them to sign transactions across these networks.
+[You can pick ideas from](https://github.com/dfinity/grant-rfps/blob/main/requests-for-startups.md)
 
-These features enable applications that simply **can’t be built anywhere else**, setting ICP apart from other blockchain platforms.
+**How to Get Started:**
+1.  Attend the coding and tutorial sessions in the hacker house if you prefer to develop in TypeScript; 
+2.  Or if you are already a Rust or Motoko developer, watch this [Youtube tutorial video](https://www.youtube.com/watch?v=gEuI43g1m94) to get an overview of the [IC-ETH-Starter] project.
 
-### Challenge
+#### Fully on-chain dapps - Total Prize pool of USD 5k
 
-Leverage the unique power of ICP to build an app that **couldn't be built anywhere else**! Take advantage of features like seamless cross-chain interoperability, chain-key cryptography, or HTTPS outcalls. Whether it’s enabling Bitcoin payments directly from an ICP smart contract, executing Ethereum smart contract logic across chains, or hosting a multichain dapp with massive low-cost storage, your app should showcase what can only be achieved on ICP. The goal is to create a dapp that pushes the boundaries of blockchain technology by integrating ICP’s unparalleled multichain capabilities and making cross-chain complexity invisible to users.
+Utilize the Internet Computer to build a fully on-chain dapp. Consider using a
+starter project or a sample dapp to kickstart your development. Here are some
+possible directions you could take
 
-### Guidance
 
-**Ideas for inspiration:**
+-   **SocialFi applications** - Social interactions on chains means that users own their data. On ICP you can host websites and interact with smart canisters directly from the browser. On top of this, ICP has the smoothest user onboarding experience. No wallet necessary.
+-   **DAO tooling** - ICP has the capability of hosting the entire governance process for DAOs on-chain. Show us what you can build to make DAOs thrive.
+-   **Privacy focused applications** - Blockchains in general are not the best for privacy of data. vetKeys on ICP help you build dapps in which users can preserve their privacy.
+-   **RWA DeFi protocols** - With https outcalls, ICP canisters can bring in real world data streams on chain. We are looking for projects that tokenize new assets and bring them on chain.
+-   **dAI** - With next-gen smart contracts that combine the scalability and user experience of web2 applications with the security guarantees of web3. ICP smart contracts can
+    -   **Handle large amounts of data**: ICP’s next gen contracts can store and process gigabytes of data, unlike traditional smart contracts that can only handle kilobytes. This is both required for storing and executing large AI models as well as processing large amounts of input data.
+    -   **Superior computational power**: ICP’s next gen smart contracts provide significantly higher computational power per transaction compared to current generation blockchains (two orders of magnitude). In addition, they are optimized to handle the complex calculations needed for AI models (e.g. floating point operations), making them much faster and more efficient.
+    
+  This enables ICP to be best protocol out there to build these types of AI solutions
+   -   **Handle large amounts of data**:
+   -   Enterprise-level AI agents that are less susceptible to corporate espionage and sabotage
+   -   Internet-of-Things (IoT) AI agent-to-agent payment rails leveraging cryptocurrencies like Bitcoin
+   -   AI development traceability products, including verification that a model was trained on ethically-sourced data sets
+   -   Products that can frictionlessly transact vector database instances, creating data marketplaces
+   -   Poducts that allow multi-party ownership and control over AI deployments and applications
+   -   AI applications capable of securely storing underlying data sets.  For example, facial recognition software that doesn’t expose PII of the persons in the training set or inputted into the inference engine.
 
--   **Onchain games:** Simple dice or card games that use ICP’s secure randomness for fair gameplay.
--   **Reminder service:** A canister that relies on timers and HTTPS outcalls to send you notifications at certain times. Monitor onchain transactions or send yourself any reminder at a future date.
--   **Prediction Market:** Start simple by using HTTPS outcalls to resolve predictions for a specific topic. Think about using timers to automatically trigger the HTTPS outcalls to handle resolution. Long term think about an alternative to Polymarket.
--   **Decentralized Data Aggregator:** Build a dapp that uses HTTPS outcalls on ICP to fetch real-time off-chain data from various sources (e.g., stock prices, weather, or APIs) and aggregate it on-chain for use by other applications.
--   **Facilitate a Stripe Payment**: Use HTTP outcalls from an ICP canister to process payments via Stripe.
--   **Unity Game Integration**: Integrate a Unity game with Internet Identity (II) for login, and store high scores or user items in a canister using the C# SDK.
--   **Whistleblower Platform**: Create a secure platform for anonymous whistleblowing, using vetkeys for additional security.
+##### Prizes
 
-### What We’re Looking For
+1. USD 3k in ICP grants
+2. USD 1.5k in ICP grants
+3. USD 0.5k in ICP grants
 
--   Projects that leverage the unique features ICP has to offer.
--   Originality: The project must be a unique idea, not a rework of existing projects.
--   The project must be deployed on the ICP mainnet.
--   Code must be published to GitHub and licensed under a permissive license.
--   A detailed README explaining the project’s scope and functionality.
--   A recorded demo walking viewers through the project and its codebase.
+#### EVM dApps on ICP - Total Prize pool of USD 5k
 
-### Judging Criteria
+[Bitfinity](https://bitfinity.network/) is an Ethereum Virtual Machine (EVM) implemented as a smart contract on Internet Computer Protocol
+It helps scale the Ethereum ecosystem for developers to operate their apps on an Ethereum-compatible, high-throughput, scalable, and future-safe platform, with low transaction costs for their users.
 
--   **Uniqueness**: Does the project use at least one feature unique to ICP?
--   **Creativity**: How innovative is the dapp and its use of ICP?
--   **Functionality**: Is the dapp fully functional and meets its intended purpose?
--   **Code Quality**: Is the code well-documented, structured, and maintainable?
--   **Bonus**: Provide feedback on ICP’s unique features like HTTP Outcalls and Timers.
+Here are some suggested themes. Projects are not limited to these verticals.
 
-## 2) **Chain Fusion**
+- DeFi (e.g. AMM, Aggregator, Lending & Borrowing, etc.)
+- NFT & Gaming (e.g. NFT Platform, POAP dApp, Marketplace, Web3 Game etc.)
+- Infrastructure (e.g. Remix, Bridge, Text Messaging, Internet Identity etc.)
 
-Leverage Internet Computer's new [Chain Fusion](https://internetcomputer.org/chainfusion) technology to build or extend a cross-chain dApp that integrates ICP with any other chain, including Bitcoin and Ethereum. Using Chain Fusion, you can connect these chains directly without bridges, oracles, or intermediaries. ICP canister smart contracts are capable of signing Ethereum or Bitcoin transactions directly via [ICP's threshold signing API](https://internetcomputer.org/docs/current/developer-docs/smart-contracts/encryption/t-ecdsa/), and they can read from other networks through integrations like [ICP’s Bitcoin API](https://internetcomputer.org/docs/current/developer-docs/multi-chain/bitcoin/overview) or [EVM RPC](https://internetcomputer.org/docs/current/developer-docs/multi-chain/ethereum/evm-rpc/overview) calls, or through custom [HTTPS outcalls](https://internetcomputer.org/docs/current/developer-docs/smart-contracts/advanced-features/https-outcalls/https-outcalls-overview).
 
-### Challenge
+##### Prizes
 
-Build a dapp that demonstrates ICP's cross-chain capabilities through Chain Fusion, with flexibility to integrate any blockchain-related functionality you choose. Your dApp should highlight practical uses of Chain Fusion and showcase ICP’s unique cross-chain features. Ideas may include automating tasks on Ethereum, building fully on-chain apps that leverage Chain Fusion, or experimenting with cross-chain DeFi applications using ckBTC or ckETH tokens.
+1. USD 3k in ICP grants
+2. USD 1.5k in ICP grants
+3. USD 0.5k in ICP grants
 
-### Guidance
 
-**Ideas for inspiration:**
+## Resources
 
--   **Dollar Cost Averaging (DCA):** Let a canister manage DCA of an asset on a DEX like Uniswap.
--   **BTC Lending/Borrowing through ckBTC:** Enable decentralized Bitcoin lending and borrowing on ICP using ckBTC.
--   **Dead Man Switch Canister for BTC:** Create a dead man switch for Bitcoin, where funds automatically transfer to an exchange or designated address in case of the user's death.
--   **Native BTC/ETH Coinflip:** Implement a coinflip game with Bitcoin or ETH, handled entirely within a canister using ICP’s chain fusion and randomness features.
--   **Cross-Chain Crowdfunding Platform**: Build a decentralized crowdfunding platform where users can contribute funds in Bitcoin, Ethereum, or other tokens using ICP’s direct blockchain integrations.
--   **Cross-Chain Payment Gateway**: Develop a payment gateway that allows businesses to accept Bitcoin, Ethereum, and other cryptocurrencies without intermediaries, using ICP for secure cross-chain transactions.
--   **Canister Managed Index Fund:** Develop a canister-based index fund that automatically buys top assets on a DEX like Uniswap.
--   **Autonomous User-Controlled Canisters:** Create an autonomous agent where user-controlled canisters on ICP execute cross-chain actions, store data, and run tasks independently. One example could be an autonomous trading bot.
--   **Cross-Chain DAO Voting Platform:** Build a DAO voting platform on ICP that can execute governance decisions on multiple blockchains, like Bitcoin and Ethereum, using ICP’s cross-chain signing features.
--   **Extend an ETH/Bitcoin dapp with a canister backend/frontend:** Use [Sign in with Bitcoin](https://internetcomputer.org/docs/current/developer-docs/identity/authentication/siwb) or [Sign with Ethereum](https://internetcomputer.org/docs/current/developer-docs/identity/authentication/siwe) to allow users to seamlessly interact with ICP using their wallet of choice.
--   **Deploy ETH Smart Contract**: Enable deployment of an Ethereum smart contract directly from an ICP canister.
 
-### What We’re Looking For
+### Get Started here with macOS, Windows and Linux:
+- [Azle (TypeScript) Backend and React Frontend](https://github.com/fxgst/azle-react)
+- [Rust Backend and React Frontend, with connection to Ethereum](https://github.com/fxgst/evm-rpc-rust)
+- [Motoko Backend and Vanilla JS Frontend](https://github.com/dfinity/icp-hello-world-motoko)
 
--   Projects that showcase one or more Chain Fusion features.
--   Originality: The project must not be a rework of existing projects.
--   A functional deployment on ICP mainnet.
--   Public code on GitHub, licensed permissively.
--   A detailed README explaining the project’s scope and functionality.
--   A recorded demo walking viewers through the project and codebase.
+  
+### General
+- [Azel Book](https://demergent-labs.github.io/azle/the_azle_book.html)
+- [101 Azle Tutorial](https://dacade.org/zh/communities/icp/courses/typescript-smart-contract-101/learning-modules/b14741ea-ee33-43a4-a742-9cdc0a6f0d1c)
+- [ICP Hackathon Cheatsheet](https://dfinityorg.notion.site/ICP-Hackathon-Cheat-Sheet-b2921239266149de81021412f572351c)
+- [Awesome Internet Computer Dev Resources](https://github.com/dfinity/awesome-internet-computer)
+- [ICP Zero to Dapp Series](https://youtube.com/playlist?list=PLuhDt1vhGcrcRcHvSKmxIgJAh1b3rcR7N&si=Dy3Zm1t5oBJY916n)
+- [Rust CDK docs](https://docs.rs/ic-cdk/latest/ic_cdk/)
+- [AI DevRel](https://icp-ai-chat-frontend.vercel.app/)
+- [Various Courses in multiple languages](https://dacade.org/communities/icp)
+- [BITFINITY EVM](https://docs.bitfinity.network/)
+- [Tutorial BITFINITY -1](https://www.youtube.com/playlist?list=PLUDcVqFK2t-C36KaTMzV3y1wu8Hf-qyAI)
+- [Tutorial BITFINITY -2](https://www.blog.bitfinity.network/how-to-deploy-a-solidity-smart-contract-to-the-bitfinity-evm/)
+  
 
-### Judging Criteria
+### Cycles
 
--   **Feature Utilization**: Does the project utilize at least one Chain Fusion feature?
--   **Creativity**: How innovative is the project in terms of cross-chain functionality?
--   **Completeness**: Is the dapp fully functional and achieves its purpose?
--   **Code Quality**: Is the code well-documented, structured, and easy to maintain?
--   **Bonus**: Provide feedback on ICP’s chain-key signatures and other integration features.
+Ask your hacker house mentor
 
-## 3) **EVM dApps on ICP**
+```bash
+dfx wallet redeem-faucet-coupon <coupon_id> --ic
+```
 
-Develop Ethereum-compatible applications using [Bitfinity](https://bitfinity.network/), exploring diverse themes such as DeFi, NFTs, gaming, launchpads, and infrastructure solutions. In the DeFi space, projects can include automated market makers (AMMs) and aggregators, fostering new ways for users to engage with decentralized finance. NFT and gaming projects could involve building NFT platforms and marketplaces, creating unique gaming experiences that leverage blockchain technology, or establishing new forms of digital ownership. Launchpads like Pump.fun offer exciting possibilities for emerging projects to reach wider audiences, fueling growth and innovation.
 
-We also supports infrastructure initiatives, these might include creating development environments like Remix, or messaging systems that enhance communication within decentralized networks. By building with Bitfinity, developers can drive scalability and broaden the possibilities for interoperability within the Ethereum ecosystem, ultimately advancing the future of blockchain applications.
-
-### Challenge
-
-Leverage the EVM compatibility of Bitfinity on ICP to create a dApp that pushes the boundaries of interoperability and user engagement. Your project should align with one of the major themes below but can incorporate additional features to stand out.
-
-### Guidance
-
-**Ideas for inspiration:**
-
--   **Automated Market Makers (AMMs)**: Build an Ethereum-compatible AMM on ICP to provide liquidity and enable decentralized trading.
--   **DeFi Aggregators**: Create aggregators that bring together DeFi protocols, giving users a single interface to interact with multiple liquidity pools or lending platforms.
--   **NFT Marketplaces**: Develop a marketplace where users can mint, buy, sell, and trade NFTs, leveraging Ethereum compatibility on ICP.
--   **Gaming Experiences**: Build gaming applications that utilize NFTs or tokenized assets, allowing players to own, trade, and use in-game assets securely on the blockchain.
--   **Digital Ownership Platforms**: Establish platforms for new forms of digital ownership, enabling users to verify, trade, or showcase assets like art, music, or collectibles.
--   **Launchpads**: Create launchpads to support new blockchain projects, allowing startups to raise funds and reach broader audiences (e.g., similar to Pump.fun).
--   **Development Environments**: Build tools and environments, like Remix, to facilitate Ethereum-compatible development on ICP.
--   **Messaging Systems for Decentralized Networks**: Develop messaging systems that enhance communication within decentralized applications and networks, supporting the Ethereum ecosystem on ICP.
-
-### What We’re Looking For
-
--   **Innovative Use of Bitfinity Network**: Projects should creatively leverage Bitfinity's EVM compatibility on ICP, offering unique or improved functionality for Ethereum-based applications.
--   **Originality and Impact**: The project must bring a fresh idea to life rather than replicate existing solutions. We’re looking for ideas that provide new utility or significantly enhance current DeFi, NFT, gaming, or infrastructure solutions.
--   **Fully Functional Deployment**: Projects must be deployed on the Bitfinity testnet and accessible for user interaction.
--   **Accessible and Well-Documented Code**: All code should be available on GitHub, open-sourced under a permissive license, and include thorough documentation.
--   **Clear and Detailed README**: The README should explain the project’s scope, objectives, and how to interact with the dApp.
--   **Demonstration Video**: A recorded demo should walk viewers through the project’s functionalities, codebase, and key features.
-
-### Judging Criteria
-
--   **Ethereum Compatibility**: Does the project make effective use of Ethereum compatibility through Bitfinity, enabling a seamless user experience or expanded functionality on ICP?
--   **Creativity and Originality**: How innovative is the dApp in its approach, theme, or use of ICP’s unique features to enhance Ethereum-based applications?
--   **Functionality and Completeness**: Is the project fully functional, and does it achieve its intended purpose in a reliable, user-friendly way?
--   **Code Quality and Documentation**: Is the code well-structured, documented, and easy for others to understand and extend?
--   **Bonus Points**: Projects that provide feedback on using Bitfinity Network and highlight any areas of improvement or potential use cases.
-
-# Resources
-
--   [ICP Hackathon Cheatsheet](https://www.notion.so/ICP-Hackathon-Cheat-Sheet-b2921239266149de81021412f572351c?pvs=21)
--   [Developer Documentation](https://internetcomputer.org/docs/current/home)
--   [Developer Forum](https://forum.dfinity.org/)
--   [Community Discord](https://discord.com/invite/cA7y6ezyE2)
--   [Educational Resources](http://internetcomputer.org/education)
--   [AI DevRel](https://icp-ai-chat-frontend.vercel.app/)
--   [BITFINITY EVM](https://docs.bitfinity.network/)
--   [Tutorial BITFINITY -1](https://www.youtube.com/playlist?list=PLUDcVqFK2t-C36KaTMzV3y1wu8Hf-qyAI)
--   [Tutorial BITFINITY -2](https://www.blog.bitfinity.network/how-to-deploy-a-solidity-smart-contract-to-the-bitfinity-evm/)
-
-# Cycles
-
-Ask your hacker house mentor for coupons, then follow the steps outlined [here](https://internetcomputer.org/docs/current/developer-docs/getting-started/cycles/cycles-faucet#step-8-setup-dfx).
-
-# How to Submit
-
-## Bounty Submission
-
-To submit a bounty for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
-Set the title of the Issue as follows: Bounty Submission.
-See an example bounty submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/2#issue-2640519216).
-In order for your submission to be considered, include the following things in the Issue description:
-
--   link to a Github repository containing **your** project code (main branch is considered only)
--   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
--   Your ICP principal for the payout (from the OISY wallet)
-
-Note the submission criteria:
-
--   The issue must be created from a github user
--   Team submissions are not accepted here
--   No re-use of previous works and plagiarism. Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
-
-Once you submitted the issue, approach a mentor at the hacker house to review your submission.
-
-## Track Submission
-
+## Project Submission
 To submit a project for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
 Set the title of the Issue to the name of your project.
-See an example project submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/1#issue-2640492144). Make sure you read the "What we're looking for" and "Judging Criteria" sections for each track before submitting.
+See an example project submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/1#issue-2640492144).
+We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
 In order for your submission to be considered, include the following things in the Issue description:
 
 -   link to a Github repository containing **your** project code (not just the template!) and a README.md on how to run it (main branch is considered only)
-    -   your project must be built on ICP/ Bitfinity, and all code must be in the repo above
+    -   your project must be built on ICP, and all code must be in the repo above
     -   No re-use of previous works and plagiarism
     -   Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
--   include a video to showcase your project
+-   you can also include a video to showcase your project
 -   project description
--   what Track you want to apply for
+-   what track you want to apply for
 -   team participants
     -   please use GitHub username for everyone
     -   Discord IDs
 -   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
 -   your ICP principal for the payout (from the OISY wallet)
+  
 
-# Judging
+## Challenge Submission
 
-While the mentors will be judging submissions, each group will be presenting the project to hackers around their table in a small committee.
+There are 2 challenges, you can do them in Azle (TS/JS), Rust or Motoko.
+
+1) You have to submit a canister featuring a custom **frontend & backend** (don't just copy the template).
+2) Submit a canister using **HTTPS outcalls**, or making a **crosschain interaction**.
+
+To submit a challenge for the hackathon - open an [Issue](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/new/choose) on this repository before the deadline.
+Set the title of the Issue as follows: Challenge Submission.
+See an example challenge submission [here](https://github.com/ICP-Hacker-House/Devcon_BKK/issues/2#issue-2640519216).
+We accept submissions in TypeScript or JavaScript (Azle), Rust and Motoko.
+In order for your submission to be considered, include the following things in the Issue description:
+
+-   link to a Github repository containing **your** project code (not just the template!) (main branch is considered only)
+OR:
+-   link to canister on mainnet (e.g. `https://5zugh-4yaaa-aaaag-qjqra-cai.raw.icp0.io`)
+
+-   Your ICP principal for the payout (from the OISY wallet)
+
+Note the submission criteria:
+    -   The issue must be created from a github user
+    -   Team submissions are not accepted here
+    -   If you solve challenge 1 and 2 in the same canister, you can just submit one canister/repo
+    -   No re-use of previous works and plagiarism
+    -   Projects that explicitly re-used or plagiarized other works may be reported and subjected to the award cancellation
+
+## Payout
+Create an oisy wallet [here](https://oisy.com/) to receive tokens
+
+
+## Judging
+
+### Presentations and judging
+While the mentors will be judging submissions,
+each group will be presenting the project to hackers around their table in a
+small committee.
 
 The winner(s) of each track will then present their project on stage.
 
+### Judging Criteria
+
+-   **X Factor and Potential**
+    -   What is the wow factor of the idea? Does it have potential?
+-   **Technical Competence**
+    -   What is the quality of the technical designs and source code?
+-   **Impact**
+    -   Does this project solve a real-world problem? Can people use it?
+-   **Progression**
+    -   Can a library be used? Is a service actually usable? How far did you go?
+-   **IC Superpowers**
+    -   How well did you utilize the superpowers of the Internet Computer?
+
 [DFINITY Hackathon Terms and Conditions](https://www.notion.so/dfinityorg/DFINITY-HACKATHON-TERMS-AND-CONDITIONS-Fully-On-Chain-with-ICP-1faf692d49a64c89afb5589a7219eee2?pvs=4)
 
-# Payout
 
-Create an oisy wallet [here](https://oisy.com/) to receive tokens.
+[IC-ETH-Starter]: https://github.com/dfinity/ic-eth-starter
